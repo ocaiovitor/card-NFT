@@ -1,16 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
 body {
     background-color: hsl(217, 54%, 11%);
 }
 
-.cartão {
+.content {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
     background-color: hsl(216, 50%, 16%);
-
+    padding: 1.2em;
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
 }
 
-.days {
-    
+.topCard img {
+    width: 100%;
 }
 
-.avatar {
-    
+.topCard img {
+    border-radius: 10px;
+}
+
+.mediaCard span {
+    display: flex;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 1em 0;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+.mediaCard p {
+    word-break: break-all;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.infoCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.eth, .days{
+    display: flex;
+    align-items: center;
+}
+
+.eth h2 {
+    color: hsl(178, 100%, 50%);
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.days p {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    padding-left: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+.linha {
+    width: auto;
+    border: 1px solid papayawhip;
+}
+
+.footerCard {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.footerCard img {
+    width: 15%;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: beige;
+    border-style: solid;
+}
+
+.footerCard p {
+    padding-left: 1em;
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+}
+
+.footerCard b {
+    color: beige;
 }
