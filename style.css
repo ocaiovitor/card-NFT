@@ -22,21 +22,35 @@ body {
 }
 
 
-.topCard img {
+.topCard .img {
     width: 100%;
     border-radius: 10px;
 }
 
 .opacityTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(178, 100%, 50%);
     border-radius: 12px;
     height: 300px;
+
 }
 
-.topCard img:hover {
+.topCard .img:hover {
     opacity: 0.5;
     transition: 0.5s;
 }
+
+.icone {
+    position: absolute;
+    opacity: 0;
+}
+
+.icone:hover {  
+    opacity: 1;
+}
+
 
 .mediaCard span {
     display: flex;
