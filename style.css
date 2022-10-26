@@ -28,28 +28,41 @@ body {
 }
 
 .opacityTop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(178, 100%, 50%);
+    position: relative;
     border-radius: 12px;
-    height: 300px;
-
 }
 
-.topCard .img:hover {
-    opacity: 0.5;
-    transition: 0.5s;
+.img {
+    display: block;
+    width: 100%;
+}
+
+.icone img {
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+
+.opacityTop:hover .icone{
+    display: block;
+    cursor: pointer;
+    border-radius: 12px;
 }
 
 .icone {
     position: absolute;
-    opacity: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
 }
 
-.icone:hover {  
-    opacity: 1;
-}
 
 
 .mediaCard span {
@@ -133,4 +146,10 @@ body {
 }
 .footerCard b:hover {
     color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        margin: 0 1em;
+    }
 }
